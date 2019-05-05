@@ -1,4 +1,5 @@
 library(lubridate)
+library(dplr)
 
 setwd("C:/Users/Courtney/Documents/Coursera/Exploratory Data Analysis")
 list.files()
@@ -20,6 +21,6 @@ plot(power$DateTime, power$Global_active_power,
      ylab="Global Active Power (kilowatts)",
      xlab="")
 
-dev.copy(png, "plot2.png")
+dev.copy(png, "plot2.png", width=480, height=480)
 
 dev.off()

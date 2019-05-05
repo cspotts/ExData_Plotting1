@@ -1,4 +1,5 @@
 library(lubridate)
+library(dplyr)
 
 setwd("C:/Users/Courtney/Documents/Coursera/Exploratory Data Analysis")
 list.files()
@@ -41,6 +42,6 @@ plot(power$DateTime, power$Global_reactive_power,
      xlab="datetime",
      ylab="Global_reactive_power")
 
-dev.copy(png, "plot4.png")
+dev.copy(png, "plot4.png", width=480, height=480)
 
 dev.off()
